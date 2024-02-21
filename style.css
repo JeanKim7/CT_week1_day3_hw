@@ -1,9 +1,77 @@
+body {
+    height:100vh;
+    margin:0px;
+}
+
 .content_container {
+    min-height:100vh;
+    display:grid;
     grid-template-columns:15vw 70vw 15vw;
-    grid-template-rows: 10vh 30vh 50vh 20vh;
+    grid-template-rows: 10vh 30vh 30vh 20vh;
     grid-template-areas:
     "nav nav nav"
     "pic pic pic"
     ". shows ."
     "footer footer footer"
+}
+
+.nav {
+    grid-area: nav;
+    background-color: black;
+    color:white;
+    font-size: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:10vw;
+    padding-right:20vw;
+}
+
+.logo {
+    font-size: 1.2em
+}
+
+.nav-links {
+    display:flex;
+    justify-content: space-between;
+    width:40vw;
+}
+
+.nav-links > a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em; 
+}
+
+
+.main_pic {
+    grid-area: pic;
+}
+
+.main_img_container {
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.main_img_container > img{
+    max-width:100%;
+}
+
+.main_img_container > div {
+    position: absolute;
+    z-index: 10;
+    color:white;
+    font-size: 4em;
+}
+
+.showtimes {
+    grid-area: showtimes;
+}
+
+.footer {
+    grid-area: footer;
 }
