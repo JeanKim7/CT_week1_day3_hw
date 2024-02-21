@@ -1,0 +1,9 @@
+.content_container {
+    grid-template-columns:15vw 70vw 15vw;
+    grid-template-rows: 10vh 30vh 50vh 20vh;
+    grid-template-areas:
+    "nav nav nav"
+    "pic pic pic"
+    ". shows ."
+    "footer footer footer"
+}
