@@ -7,7 +7,7 @@ body {
     min-height:100vh;
     display:grid;
     grid-template-columns:15vw 70vw 15vw;
-    grid-template-rows: 10vh 30vh 30vh 20vh;
+    grid-template-rows: 8vh 50vh 30vh 20vh;
     grid-template-areas:
     "nav nav nav"
     "pic pic pic"
@@ -49,7 +49,7 @@ body {
 }
 
 .main_img_container {
-    max-width:100%;
+    height: 100%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -58,7 +58,8 @@ body {
 }
 
 .main_img_container > img{
-    max-width:100%;
+    width: 100%;
+    height:100%;
 }
 
 .main_img_container > div {
