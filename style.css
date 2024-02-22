@@ -7,7 +7,7 @@ body {
     min-height:100vh;
     display:grid;
     grid-template-columns:15vw 70vw 15vw;
-    grid-template-rows: 8vh 50vh 30vh 20vh;
+    grid-template-rows: 8vh 50vh 90vh 40vh;
     grid-template-areas:
     "nav nav nav"
     "pic pic pic"
@@ -71,6 +71,7 @@ body {
 
 .showtimes {
     grid-area: shows;
+    max-height:100%
 }
 
 .date {
@@ -81,13 +82,17 @@ body {
    margin-bottom: 3vh;
    font-size: x-large; 
 }
-
+.scaling {
+    max-height:100%
+}
 .show_container {
     display:flex;
     justify-content: space-between;
     padding-left:1vh;
     padding-bottom: 5vh;
-    border-bottom: 1px solid grey
+    border-bottom: 1px solid grey;
+    max-height: 100%
+
 }
 
 .show_container_1 {
@@ -111,13 +116,14 @@ body {
 }
 
 .show_info {
-    padding-left: 3vh
+    padding-left: 3vh;
 }
 
 .show_info > h3 {
     font-weight: 500; 
     font-size:x-large;
     margin: 0px;
+    display:flex;
 }
 
 .button_container {
@@ -137,4 +143,87 @@ body {
 
 .footer {
     grid-area: footer;
+    margin-top:3vh;
+    height: 40vh;
+    background-color: black;
+    display:flex;
+    justify-content:space-between;
+    color: white;
+    padding:10vh 10vw;
+}
+
+.map-container {
+    width: 20vw;
+    height:20vh;
+}
+
+.map-container >img {
+    width:100%;
+    height: 100%;
+}
+
+#info {
+    font-size:xx-large
+}
+.pin {
+    display:flex;
+    font-size: 0.7em;
+    margin:2vh 0;
+}
+.pin_cont {
+    width:2vw;
+    height:3vh;
+}
+
+.pin_cont > img {
+    width:100%;
+    height:100%
+}
+.email {
+    display:flex;
+    font-size: 0.7em;
+    margin-bottom:2vh;
+}
+.email_cont {
+    width:2vw;
+    height:3vh;
+}
+
+.email_cont >img {
+    width:100%;
+    height:100%
+}
+
+.phone {
+    display:flex;
+    font-size:0.7em;
+}
+.phone_cont {
+    width:2vw;
+    height:3vh;
+}
+
+.phone_cont > img {
+    width:100%;
+    height:100%
+}
+
+.shows_title {
+    font-size:xx-large
+}
+
+.footer_shows >div {
+    margin-bottom: 2vh
+}
+
+.abc {
+    font-size: 0.7em;
+}
+
+.social_title {
+    font-size:xx-large;
+}
+
+.footer_social >div {
+    margin-bottom: 2vh;
 }
